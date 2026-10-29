@@ -1,0 +1,36 @@
+{
+  "name": "crazypartsnatcher-oem-api",
+  "version": "1.0.0",
+  "description": "CrazyPartSnatcher Edge API & OEM Cross-Reference Microservice running on Cloudflare Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "cloudflare-worker",
+    "oem-normalizer",
+    "truck-parts",
+    "commercial-vehicles",
+    "cross-reference",
+    "price-comparison",
+    "edge-computing",
+    "microservice"
+  ],
+  "author": "CrazyPartSnatcher Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tom7668h/cloudflare-oem-worker.git"
+  },
+  "homepage": "https://github.com/Tom7668h/cloudflare-oem-worker#readme",
+  "bugs": {
+    "url": "https://github.com/Tom7668h/cloudflare-oem-worker/issues"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240923.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^3.78.0"
+  }
+}

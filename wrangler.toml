@@ -1,0 +1,9 @@
+name = "crazypartsnatcher-oem-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+# Cloudflare Workers Dev Domain Routing
+workers_dev = true
+
+[observability]
+enabled = true
