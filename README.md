@@ -93,6 +93,8 @@ curl -s "https://crazypartsnatcher-oem-api.workers.dev/?oem=81.50110.0144" | jq 
 ## 🔗 Ecosystem Links
 - **Platform:** [CrazyPartSnatcher – Lkw & Nutzfahrzeug-Ersatzteile Preisvergleich](https://www.crazypartsnatcher.com)
 - **Live Edge Microservice:** [crazypartsnatcher-oem-api.crazypartsnatcher.workers.dev](https://crazypartsnatcher-oem-api.crazypartsnatcher.workers.dev)
+- **OEM Prefix Directory (Cloudflare Pages):** [crazypartsnatcher.pages.dev](https://crazypartsnatcher.pages.dev)
+- **Truck Component Guide (Surge Cloud):** [crazypartsnatcher.surge.sh](https://crazypartsnatcher.surge.sh)
 - **Worker GitHub Repository:** [Tom7668h/cloudflare-oem-worker](https://github.com/Tom7668h/cloudflare-oem-worker)
 - **Core Normalizer Repository:** [Tom7668h/oem-part-normalizer](https://github.com/Tom7668h/oem-part-normalizer)
 - **npm Library:** [@crazypartsnatcher/oem-normalizer](https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer)

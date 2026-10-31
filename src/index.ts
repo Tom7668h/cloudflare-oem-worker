@@ -149,6 +149,8 @@ export default {
         catalog_matches: brandDetails,
         ecosystem: {
           platform: 'https://www.crazypartsnatcher.com',
+          pages_directory: 'https://crazypartsnatcher.pages.dev',
+          surge_guide: 'https://crazypartsnatcher.surge.sh',
           repository: 'https://github.com/Tom7668h/oem-part-normalizer',
           npm: 'https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer',
           packagist: 'https://packagist.org/packages/crazypartsnatcher/oem-normalizer',
@@ -665,6 +667,24 @@ function generateLandingHtml(host: string): string {
       <!-- Ecosystem Cards Grid (100% Dofollow) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
         
+        <a href="https://crazypartsnatcher.pages.dev" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 transition-all group">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+            <span class="text-amber-400 font-bold">Cloudflare Pages</span>
+            <span>Directory</span>
+          </div>
+          <div class="font-bold text-white text-sm group-hover:text-amber-300 transition-colors">OEM Prefix Directory</div>
+          <div class="text-[11px] text-slate-400 mt-1">Interactive commercial vehicle &amp; truck numbering schema directory (MAN, Daimler, DAF, BPW).</div>
+        </a>
+
+        <a href="https://crazypartsnatcher.surge.sh" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/50 transition-all group">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+            <span class="text-emerald-400 font-bold">Surge Cloud</span>
+            <span>Maintenance</span>
+          </div>
+          <div class="font-bold text-white text-sm group-hover:text-emerald-300 transition-colors">Truck Component Reference</div>
+          <div class="text-[11px] text-slate-400 mt-1">Heavy-duty truck &amp; trailer aftermarket maintenance, wear parts matrix, and cross-references.</div>
+        </a>
+
         <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/50 transition-all group">
           <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
             <span class="text-emerald-400 font-bold">GitHub Repository</span>
@@ -911,6 +931,8 @@ print(r.json()["live_price_comparison_url"])</code></pre>
       <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs text-slate-400">
         <a href="https://www.crazypartsnatcher.com" class="hover:text-emerald-400 transition-colors font-medium">CrazyPartSnatcher.com</a>
         <a href="https://www.crazypartsnatcher.com/about" class="hover:text-emerald-400 transition-colors font-medium">Über Uns</a>
+        <a href="https://crazypartsnatcher.pages.dev" target="_blank" class="hover:text-amber-400 transition-colors font-medium">Pages Directory</a>
+        <a href="https://crazypartsnatcher.surge.sh" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">Surge Guide</a>
         <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">GitHub Repo</a>
         <a href="https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">npm</a>
         <a href="https://packagist.org/packages/crazypartsnatcher/oem-normalizer" target="_blank" class="hover:text-amber-400 transition-colors font-medium">Packagist</a>
