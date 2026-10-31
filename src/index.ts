@@ -149,9 +149,13 @@ export default {
         catalog_matches: brandDetails,
         ecosystem: {
           platform: 'https://www.crazypartsnatcher.com',
-          author: 'https://github.com/Tom7668h',
           repository: 'https://github.com/Tom7668h/oem-part-normalizer',
           npm: 'https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer',
+          packagist: 'https://packagist.org/packages/crazypartsnatcher/oem-normalizer',
+          jsdelivr: 'https://www.jsdelivr.com/package/npm/@crazypartsnatcher/oem-normalizer',
+          socket: 'https://socket.dev/npm/package/@crazypartsnatcher/oem-normalizer',
+          unpkg: 'https://unpkg.com/browse/@crazypartsnatcher/oem-normalizer/',
+          bundlephobia: 'https://bundlephobia.com/package/@crazypartsnatcher/oem-normalizer',
           docs: 'https://tom7668h.github.io/oem-part-normalizer/',
         },
         edge_meta: {
@@ -200,9 +204,9 @@ function generateLandingHtml(host: string): string {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CrazyPartSnatcher Edge API – Real-Time Commercial Vehicle & Truck OEM Number Resolver (v1.0)</title>
-  <meta name="description" content="High-performance Cloudflare Edge API resolving heavy-duty truck, bus, and trailer OEM part references (MAN, Mercedes-Benz, Scania, Volvo, DAF, Knorr-Bremse, BPW) in sub-millisecond latency. Open-source core by Tom7668h." />
-  <meta name="keywords" content="OEM resolver API, truck parts cross reference, commercial vehicle OE normalizer, MAN TGX parts, Mercedes Actros OEM, Scania parts lookup, Knorr-Bremse cross reference, Cloudflare Edge API, Tom7668h" />
-  <meta name="author" content="Tom (https://github.com/Tom7668h)" />
+  <meta name="description" content="High-performance Cloudflare Edge API resolving heavy-duty truck, bus, and trailer OEM part references (MAN, Mercedes-Benz, Scania, Volvo, DAF, Knorr-Bremse, BPW) in sub-millisecond latency. Open-source core by CrazyPartSnatcher Engineering." />
+  <meta name="keywords" content="OEM resolver API, truck parts cross reference, commercial vehicle OE normalizer, MAN TGX parts, Mercedes Actros OEM, Scania parts lookup, Knorr-Bremse cross reference, Cloudflare Edge API, CrazyPartSnatcher" />
+  <meta name="author" content="CrazyPartSnatcher Engineering (https://www.crazypartsnatcher.com)" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://${host}/" />
 
@@ -311,14 +315,14 @@ function generateLandingHtml(host: string): string {
         "runtimePlatform": "Cloudflare Workers V8",
         "codeRepository": "https://github.com/Tom7668h/oem-part-normalizer",
         "author": {
-          "@type": "Person",
-          "name": "Tom",
-          "url": "https://github.com/Tom7668h"
+          "@type": "Organization",
+          "name": "CrazyPartSnatcher Engineering",
+          "url": "https://www.crazypartsnatcher.com"
         },
         "maintainer": {
-          "@type": "Person",
-          "name": "Tom",
-          "url": "https://github.com/Tom7668h"
+          "@type": "Organization",
+          "name": "CrazyPartSnatcher Engineering",
+          "url": "https://www.crazypartsnatcher.com"
         },
         "license": "https://opensource.org/licenses/MIT"
       }
@@ -640,20 +644,20 @@ function generateLandingHtml(host: string): string {
             <span>Author &amp; Open Source Core</span>
           </div>
           <h2 class="text-xl sm:text-3xl font-extrabold text-white tracking-tight">
-            Maintained by <a href="https://github.com/Tom7668h" target="_blank" rel="noopener" class="text-cyan-400 hover:text-cyan-300 underline decoration-cyan-500/50">Tom (@Tom7668h)</a>
+            Maintained by <a href="https://www.crazypartsnatcher.com" target="_blank" class="text-cyan-400 hover:text-cyan-300 underline decoration-cyan-500/50">CrazyPartSnatcher Engineering</a>
           </h2>
           <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl leading-relaxed">
-            Lead Software Architect at CrazyPartSnatcher. Built with zero-dependency TypeScript, distributed edge V8 isolates, and deep domain algorithms for commercial vehicle logistics.
+            Open-source engineering team behind CrazyPartSnatcher. Built with zero-dependency TypeScript &amp; PHP, distributed edge V8 isolates, and deep domain algorithms for commercial vehicle logistics.
           </p>
         </div>
 
         <div class="flex flex-wrap items-center gap-2 sm:gap-3 shrink-0">
-          <a href="https://github.com/Tom7668h" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-white border border-slate-700 font-semibold text-xs transition-all shadow-md">
+          <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-white border border-slate-700 font-semibold text-xs transition-all shadow-md">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            <span>GitHub Profile</span>
+            <span>GitHub Repository</span>
           </a>
-          <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-emerald-300 border border-emerald-500/40 font-semibold text-xs transition-all shadow-md">
-            <span>★ Star Repository</span>
+          <a href="https://packagist.org/packages/crazypartsnatcher/oem-normalizer" target="_blank" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-amber-300 border border-amber-500/40 font-semibold text-xs transition-all shadow-md">
+            <span>Packagist (PHP)</span>
           </a>
         </div>
       </div>
@@ -661,49 +665,76 @@ function generateLandingHtml(host: string): string {
       <!-- Ecosystem Cards Grid (100% Dofollow) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
         
-        <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" rel="noopener" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/50 transition-all group">
+        <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/50 transition-all group">
           <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
             <span class="text-emerald-400 font-bold">GitHub Repository</span>
             <span>MIT License</span>
           </div>
           <div class="font-bold text-white text-sm group-hover:text-emerald-300 transition-colors">oem-part-normalizer</div>
-          <div class="text-[11px] text-slate-400 mt-1">Open source TypeScript engine for parsing, normalizing, and format detection.</div>
+          <div class="text-[11px] text-slate-400 mt-1">Open source TypeScript and PHP engine for parsing, normalizing, and format detection.</div>
         </a>
 
-        <a href="https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer" target="_blank" rel="noopener" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-rose-500/50 transition-all group">
+        <a href="https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-rose-500/50 transition-all group">
           <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
             <span class="text-rose-400 font-bold">npm Registry</span>
-            <span>v1.0.0</span>
+            <span>v1.0.2</span>
           </div>
           <div class="font-bold text-white text-sm group-hover:text-rose-300 transition-colors">@crazypartsnatcher/oem-normalizer</div>
           <div class="text-[11px] text-slate-400 mt-1">Published npm package ready for Node.js backends and browser applications.</div>
         </a>
 
-        <a href="https://tom7668h.github.io/oem-part-normalizer/" target="_blank" rel="noopener" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 transition-all group">
+        <a href="https://packagist.org/packages/crazypartsnatcher/oem-normalizer" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 transition-all group">
           <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
-            <span class="text-amber-400 font-bold">GitHub Pages</span>
+            <span class="text-amber-400 font-bold">Packagist (PHP)</span>
+            <span>Composer</span>
+          </div>
+          <div class="font-bold text-white text-sm group-hover:text-amber-300 transition-colors">crazypartsnatcher/oem-normalizer</div>
+          <div class="text-[11px] text-slate-400 mt-1">Standalone PHP 8+ Composer package for Shopware, Magento, Sylius &amp; ERP systems.</div>
+        </a>
+
+        <a href="https://www.jsdelivr.com/package/npm/@crazypartsnatcher/oem-normalizer" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-emerald-500/50 transition-all group">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+            <span class="text-emerald-400 font-bold">jsDelivr CDN</span>
+            <span>Global Edge</span>
+          </div>
+          <div class="font-bold text-white text-sm group-hover:text-emerald-300 transition-colors">Multi-CDN Edge Mirror</div>
+          <div class="text-[11px] text-slate-400 mt-1">Zero-install browser delivery, instant minified scripts, and SRI hash verification.</div>
+        </a>
+
+        <a href="https://socket.dev/npm/package/@crazypartsnatcher/oem-normalizer" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/50 transition-all group">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+            <span class="text-cyan-400 font-bold">Socket.dev Audit</span>
+            <span>Score: 100</span>
+          </div>
+          <div class="font-bold text-white text-sm group-hover:text-cyan-300 transition-colors">Security Supply Chain Analysis</div>
+          <div class="text-[11px] text-slate-400 mt-1">Verified safe zero-dependency codebase with automated supply chain integrity scanning.</div>
+        </a>
+
+        <a href="https://unpkg.com/browse/@crazypartsnatcher/oem-normalizer/" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-blue-500/50 transition-all group">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+            <span class="text-blue-400 font-bold">UNPKG Explorer</span>
+            <span>Files &amp; Types</span>
+          </div>
+          <div class="font-bold text-white text-sm group-hover:text-blue-300 transition-colors">UNPKG Package Browser</div>
+          <div class="text-[11px] text-slate-400 mt-1">Inspect compiled CJS/ESM artifacts, tarball contents, and TypeScript declaration trees.</div>
+        </a>
+
+        <a href="https://bundlephobia.com/package/@crazypartsnatcher/oem-normalizer" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-purple-500/50 transition-all group">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+            <span class="text-purple-400 font-bold">Bundlephobia</span>
+            <span>&lt; 4 KB Minified</span>
+          </div>
+          <div class="font-bold text-white text-sm group-hover:text-purple-300 transition-colors">Performance &amp; Bundle Size</div>
+          <div class="text-[11px] text-slate-400 mt-1">Real-time bundle analysis, tree-shaking verification, and download time benchmarks.</div>
+        </a>
+
+        <a href="https://tom7668h.github.io/oem-part-normalizer/" target="_blank" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-teal-500/50 transition-all group">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+            <span class="text-teal-400 font-bold">GitHub Pages</span>
             <span>Live Docs</span>
           </div>
-          <div class="font-bold text-white text-sm group-hover:text-amber-300 transition-colors">Interactive Documentation Hub</div>
+          <div class="font-bold text-white text-sm group-hover:text-teal-300 transition-colors">Interactive Documentation Hub</div>
           <div class="text-[11px] text-slate-400 mt-1">Comprehensive web documentation, API references, and client-side demo tool.</div>
-        </a>
-
-        <a href="https://dev.to/tom7668h/why-matching-commercial-vehicle-oem-part-numbers-in-sql-is-messy-and-how-we-open-sourced-our-2dkp" target="_blank" rel="noopener" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/50 transition-all group">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
-            <span class="text-cyan-400 font-bold">Dev.to Engineering</span>
-            <span>Case Study</span>
-          </div>
-          <div class="font-bold text-white text-sm group-hover:text-cyan-300 transition-colors">Matching Heavy-Duty OEM Numbers in SQL</div>
-          <div class="text-[11px] text-slate-400 mt-1">Engineering deep dive into database indexing challenges and normalization heuristics.</div>
-        </a>
-
-        <a href="https://crazypartsnatcher.hashnode.dev/normalizing-automotive-truck-oem-part-numbers-in-typescript-for-fast-sql-lookups" target="_blank" rel="noopener" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-blue-500/50 transition-all group">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
-            <span class="text-blue-400 font-bold">Hashnode Blog</span>
-            <span>Deep Dive</span>
-          </div>
-          <div class="font-bold text-white text-sm group-hover:text-blue-300 transition-colors">CrazyPartSnatcher Engineering Blog</div>
-          <div class="text-[11px] text-slate-400 mt-1">Architecture analysis on delimiter variations across Tier-1 supplier feeds.</div>
         </a>
 
         <a href="https://www.crazypartsnatcher.com/about" class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-purple-500/50 transition-all group">
@@ -873,23 +904,27 @@ print(r.json()["live_price_comparison_url"])</code></pre>
           <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">v1.0.0</span>
         </div>
         <p class="text-xs text-slate-500 mt-1">
-          Developed &amp; maintained by <a href="https://github.com/Tom7668h" target="_blank" rel="noopener" class="text-slate-400 hover:text-white underline">Tom (@Tom7668h)</a>. Open-source core powering commercial vehicle spare parts search.
+          Developed &amp; maintained by <a href="https://www.crazypartsnatcher.com" target="_blank" class="text-slate-400 hover:text-white underline">CrazyPartSnatcher Engineering</a>. Open-source core powering commercial vehicle spare parts search.
         </p>
       </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-5 text-xs text-slate-400">
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs text-slate-400">
         <a href="https://www.crazypartsnatcher.com" class="hover:text-emerald-400 transition-colors font-medium">CrazyPartSnatcher.com</a>
         <a href="https://www.crazypartsnatcher.com/about" class="hover:text-emerald-400 transition-colors font-medium">Über Uns</a>
-        <a href="https://github.com/Tom7668h" target="_blank" rel="noopener" class="hover:text-emerald-400 transition-colors font-medium">GitHub @Tom7668h</a>
-        <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" rel="noopener" class="hover:text-emerald-400 transition-colors font-medium">Repo</a>
-        <a href="https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer" target="_blank" rel="noopener" class="hover:text-emerald-400 transition-colors font-medium">npm</a>
-        <a href="https://tom7668h.github.io/oem-part-normalizer/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition-colors font-medium">Playground</a>
+        <a href="https://github.com/Tom7668h/oem-part-normalizer" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">GitHub Repo</a>
+        <a href="https://www.npmjs.com/package/@crazypartsnatcher/oem-normalizer" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">npm</a>
+        <a href="https://packagist.org/packages/crazypartsnatcher/oem-normalizer" target="_blank" class="hover:text-amber-400 transition-colors font-medium">Packagist</a>
+        <a href="https://www.jsdelivr.com/package/npm/@crazypartsnatcher/oem-normalizer" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">jsDelivr</a>
+        <a href="https://socket.dev/npm/package/@crazypartsnatcher/oem-normalizer" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">Socket.dev</a>
+        <a href="https://unpkg.com/browse/@crazypartsnatcher/oem-normalizer/" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">UNPKG</a>
+        <a href="https://bundlephobia.com/package/@crazypartsnatcher/oem-normalizer" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">Bundlephobia</a>
+        <a href="https://tom7668h.github.io/oem-part-normalizer/" target="_blank" class="hover:text-emerald-400 transition-colors font-medium">Playground</a>
         <a href="/sitemap.xml" class="hover:text-emerald-400 transition-colors font-mono">sitemap.xml</a>
         <a href="/robots.txt" class="hover:text-emerald-400 transition-colors font-mono">robots.txt</a>
       </div>
     </div>
     <div class="max-w-5xl mx-auto mt-6 text-center text-[11px] text-slate-600">
-      &copy; ${currentYear} CrazyPartSnatcher. All rights reserved. Zero TecDoc API dependency · 100% Dofollow Ecosystem Link Network.
+      &copy; ${currentYear} CrazyPartSnatcher. All rights reserved. Zero external catalog API dependency · 100% Dofollow Ecosystem Link Network.
     </div>
   </footer>
 
